@@ -1,0 +1,18 @@
+#canvus {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    height: 100px;
+}
+.pixcel {
+    width: 5px;
+    height: 5px;
+}
+.white {
+    grid-area: w;
+    background: #ccc;
+}
+.black {
+    grid-area: b;
+    background: #000;
+}

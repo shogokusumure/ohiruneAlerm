@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>お昼寝Alarm</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/audio.min.js"></script>
+    <script>
+        audiojs.events.ready(function () {
+            var as = audiojs.createAll();
+        });
+    </script>
+</head>
+<body id="execwindow">
+    <section>
+        <h1>羊が<span id="passed">0</span>匹</h1>
+        <h2>あと<span id="willpass"></span>匹</h2>
+        <div class="draw">
+            <div id="sheep">
+                <img src="images/sheep.png" alt="">
+            </div>
+            <div id="msg"><p>起きて！！<br>※起こしてあげて！</p></div>
+            <div class="kusa"></div>
+        </div>
+    </section>
+    <button id="finished" onclick="owari()">END</button>
+    <button id="restart" onclick="restart()">もう一回寝直す</button>
+    <div class="player">
+        <audio src="music/music.mp3" id="music" preload="auto" loop />
+    </div>
+
+    <script src="js/exec.js"></script>
+</body>
+</html>
